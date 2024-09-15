@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "boarding_mgt.Controllers.BoardingApiController",
+    "Method": "GetBoardings",
+    "RelativePath": "api/BoardingApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[boarding_mgt.Models.Boarding, boarding_mgt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "boarding_mgt.Controllers.BoardingApiController",
+    "Method": "CreateBoarding",
+    "RelativePath": "api/BoardingApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boarding",
+        "Type": "boarding_mgt.Models.Boarding",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "boarding_mgt.Controllers.BoardingApiController",
+    "Method": "UpdateBoarding",
+    "RelativePath": "api/BoardingApi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boarding",
+        "Type": "boarding_mgt.Models.Boarding",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "boarding_mgt.Controllers.BoardingApiController",
+    "Method": "GetById",
+    "RelativePath": "api/BoardingApi/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "boarding_mgt.Models.Boarding",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "boarding_mgt.Controllers.BoardingApiController",
+    "Method": "DeleteBoarding",
+    "RelativePath": "api/BoardingApi/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

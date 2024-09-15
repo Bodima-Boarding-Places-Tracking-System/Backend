@@ -1,0 +1,6 @@
+@boarding_mgt_HostAddress = http://localhost:5097
+
+GET {{boarding_mgt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
