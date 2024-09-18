@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KAP4DecuQNclsYYSjJtwzDWqqh60cCJjiczELPINpQ0=",
+  "Source": "user_mgt",
+  "BasePath": "_content/user_mgt",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

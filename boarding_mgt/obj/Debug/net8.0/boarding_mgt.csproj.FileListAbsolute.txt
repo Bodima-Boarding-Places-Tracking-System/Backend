@@ -416,3 +416,4 @@ C:\Users\PC\Desktop\Bodima\Backend\Services\Services\boarding_mgt\obj\Debug\net8
 C:\Users\PC\Desktop\Bodima\Backend\Services\Services\boarding_mgt\obj\Debug\net8.0\boarding_mgt.pdb
 C:\Users\PC\Desktop\Bodima\Backend\Services\Services\boarding_mgt\obj\Debug\net8.0\boarding_mgt.genruntimeconfig.cache
 C:\Users\PC\Desktop\Bodima\Backend\Services\Services\boarding_mgt\obj\Debug\net8.0\ref\boarding_mgt.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\boarding_mgt\obj\Debug\net8.0\boarding_mgt.sourcelink.json
