@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace user_mgt.Migrations
 {
     /// <inheritdoc />
-    public partial class latest : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -51,12 +51,12 @@ namespace user_mgt.Migrations
             migrationBuilder.InsertData(
                 table: "BoardingOwners",
                 columns: new[] { "UserId", "Email", "FullName", "IsActive", "LastLogin", "Password", "Phone", "RegistrationDate", "Role" },
-                values: new object[] { new Guid("c309f0c1-d63f-4a23-b99f-2af8adc01520"), "lahirunanayakkara@gmail.com", "Lahiru Nanayakkara", true, new DateTime(2024, 9, 18, 5, 7, 18, 462, DateTimeKind.Local).AddTicks(8024), "12345678", "0760944045", new DateTime(2024, 9, 18, 5, 7, 18, 462, DateTimeKind.Local).AddTicks(8012), "BoardingOwner" });
+                values: new object[] { new Guid("88aebc5b-1cf1-4323-bc47-148c83fc4766"), "lahirunanayakkara@gmail.com", "Lahiru Nanayakkara", true, new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8815), "12345678", "0760944045", new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8804), "BoardingOwner" });
 
             migrationBuilder.InsertData(
                 table: "Students",
                 columns: new[] { "UserId", "FullName", "IsActive", "LastLogin", "Password", "RegistrationDate", "Role", "Webmail" },
-                values: new object[] { new Guid("82e29a8a-12b3-4aea-94ba-8f191b9235ea"), "Nanayakkara omll", true, new DateTime(2024, 9, 18, 5, 7, 18, 462, DateTimeKind.Local).AddTicks(8136), "Lahiru#1", new DateTime(2024, 9, 18, 5, 7, 18, 462, DateTimeKind.Local).AddTicks(8136), "Student", "nanayakkaraomll.21@uom.lk" });
+                values: new object[] { new Guid("c8a6e6ef-3fdd-4d7b-a150-916d33f48113"), "Nanayakkara omll", true, new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8994), "Lahiru#1", new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8993), "Student", "nanayakkaraomll.21@uom.lk" });
         }
 
         /// <inheritdoc />
