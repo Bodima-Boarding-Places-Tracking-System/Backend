@@ -11,7 +11,7 @@ using boarding_mgt.Data;
 namespace boarding_mgt.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240916194202_init")]
+    [Migration("20240920092044_init")]
     partial class init
     {
         /// <inheritdoc />
