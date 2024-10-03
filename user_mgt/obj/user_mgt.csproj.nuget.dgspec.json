@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj": {}
+    "D:\\Projects\\Bodima\\BackEnd\\user_mgt\\user_mgt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj": {
+    "D:\\Projects\\Bodima\\BackEnd\\user_mgt\\user_mgt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj",
+        "projectUniqueName": "D:\\Projects\\Bodima\\BackEnd\\user_mgt\\user_mgt.csproj",
         "projectName": "user_mgt",
-        "projectPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\obj\\",
+        "projectPath": "D:\\Projects\\Bodima\\BackEnd\\user_mgt\\user_mgt.csproj",
+        "packagesPath": "C:\\Users\\malin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Bodima\\BackEnd\\user_mgt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\malin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -51,6 +45,14 @@
               "version": "[13.0.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
@@ -106,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

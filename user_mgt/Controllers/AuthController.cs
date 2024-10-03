@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using user_mgt.Models.DTOs;
@@ -6,6 +7,7 @@ using user_mgt.Services;
 
 namespace user_mgt.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -17,7 +19,7 @@ namespace user_mgt.Controllers
             _mapper = mapper;
             _authService = authService;
         }
-
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] UserRegistrationDto userRegistrationDto)
         {
