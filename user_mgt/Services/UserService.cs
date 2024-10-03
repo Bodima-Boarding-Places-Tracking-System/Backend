@@ -18,7 +18,7 @@ namespace user_mgt.Services
         private readonly IPasswordHasher<string> _passwordHasher;
         private readonly IConfiguration _configuration;
 
-        public AuthService(AppDbContext appDbContext, IMapper mapper, IPasswordHasher<string> passwordHasher, IConfiguration configuration)
+        public UserService(AppDbContext appDbContext, IMapper mapper, IPasswordHasher<string> passwordHasher, IConfiguration configuration)
         {
             _appDbContext = appDbContext;
             _mapper = mapper;

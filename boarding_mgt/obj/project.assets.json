@@ -4323,19 +4323,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\malin\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Bodima\\BackEnd\\boarding_mgt\\boarding_mgt.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\boarding_mgt\\boarding_mgt.csproj",
       "projectName": "boarding_mgt",
-      "projectPath": "D:\\Projects\\Bodima\\BackEnd\\boarding_mgt\\boarding_mgt.csproj",
-      "packagesPath": "C:\\Users\\malin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Bodima\\BackEnd\\boarding_mgt\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\boarding_mgt\\boarding_mgt.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\boarding_mgt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\malin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4343,6 +4343,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4355,6 +4356,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4417,11 +4423,17 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\boarding_mgt\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1608",
       "level": "Warning",
