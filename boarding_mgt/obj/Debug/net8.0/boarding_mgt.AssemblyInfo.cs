@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("boarding_mgt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10035d9c70d259d6f0c87e0f4834fe6cbd2a9863")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a3f08468ec12db4f8a225938ebbd2fec54d36be")]
 [assembly: System.Reflection.AssemblyProductAttribute("boarding_mgt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("boarding_mgt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,12 +6,12 @@ using user_mgt.Models.DTOs;
 
 namespace user_mgt.Services
 {
-    public class AuthService : IAuthService
+    public class UserService : IUserService
     {
         private readonly AppDbContext _appDbContext;
         private readonly IMapper _mapper;
 
-        public AuthService(AppDbContext appDbContext, IMapper mapper) 
+        public UserService(AppDbContext appDbContext, IMapper mapper) 
         {
             _appDbContext = appDbContext;
             _mapper = mapper;

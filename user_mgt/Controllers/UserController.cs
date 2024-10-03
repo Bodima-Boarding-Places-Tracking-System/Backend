@@ -8,14 +8,14 @@ namespace user_mgt.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly IAuthService _authService;
-        public AuthController(IMapper mapper, IAuthService authService)
+        private readonly IUserService _userService;
+        public UserController(IMapper mapper, IUserService userService)
         {
             _mapper = mapper;
-            _authService = authService;
+            _userService = userService;
         }
 
         [HttpPost("register")]
@@ -36,7 +36,7 @@ namespace user_mgt.Controllers
                     Role = userRegistrationDto.Role
                 };
 
-                var result = await _authService.RegisterStudentAsync(studentRegistrationDto);
+                var result = await _userService.RegisterStudentAsync(studentRegistrationDto);
 
                 if (result.Success)
                 {
