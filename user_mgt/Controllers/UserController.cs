@@ -28,13 +28,14 @@ namespace user_mgt.Controllers
                 return BadRequest();
             }
 
-            if (userRegistrationDto.Role == "Student")
+            if (userRegistrationDto.Role == "student")
             {
                 var studentRegistrationDto = new StudentRegistrationDto
                 {
-                    FullName = userRegistrationDto.FullName,
+                    FirstName = userRegistrationDto.FirstName,
+                    LastName = userRegistrationDto.LastName,
                     Webmail = userRegistrationDto.Webmail!,
-                    PasswordHash = userRegistrationDto.PasswordHash,
+                    Password = userRegistrationDto.Password,
                     Role = userRegistrationDto.Role
                 };
 
@@ -43,14 +44,42 @@ namespace user_mgt.Controllers
                 if (result.Success)
                 {
                     var newStudent = _mapper.Map<StudentDto>(result.User);
-                    return Ok(newStudent);
+                    return Ok(result);
                 } else
                 {
-                    return BadRequest(result.Error);
+                    return BadRequest(new {result.Error});
                 }
             }
 
             return BadRequest("Invalid role specified.");
+        }
+
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
+        {
+            if(loginRequestDto == null)
+            {
+                return BadRequest();
+            }
+
+            if (loginRequestDto.Role == "student")
+            {
+                var result = await _userService.LoginStudentAsync(loginRequestDto);
+
+                if (result.Success) 
+                {
+                    return Ok(result);
+                }
+
+                if (result.Success == false)
+                {
+                    var error = result.Error;
+                    return BadRequest(new { error });
+                }
+            }
+
+            return BadRequest(new { error="Invalid role specified!" });
         }
     }
 }

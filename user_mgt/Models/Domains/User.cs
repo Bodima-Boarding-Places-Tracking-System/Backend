@@ -9,13 +9,17 @@ namespace user_mgt.Models.Domains
         [Key]
         public Guid UserId { get; set; }
         [Required]
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
         [Required]
         public string Role { get; set; }
         [Required]
         public string Password { get; set; }
         public DateTime RegistrationDate { get; set; }
         public DateTime LastLogin { get; set; } 
-        public bool IsActive { get; set; } 
+
+        public bool IsAdmin { get; set; } = false;
+        public bool IsActive { get; set; }
     }
 }

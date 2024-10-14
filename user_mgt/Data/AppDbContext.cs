@@ -16,12 +16,14 @@ namespace user_mgt.Data
             modelBuilder.Entity<BoardingOwner>().HasData(new BoardingOwner
             {
                 UserId = Guid.NewGuid(),
-                FullName = "Lahiru Nanayakkara",
+                FirstName = "Lahiru",
+                LastName = "Nanayakkara",
                 Email = "lahirunanayakkara@gmail.com",
                 Phone = "0760944045",
                 Password = "12345678",
                 Role = "BoardingOwner",
                 IsActive = true,
+                IsAdmin = true,
                 RegistrationDate = DateTime.Now,
                 LastLogin = DateTime.Now,
             });
@@ -29,11 +31,13 @@ namespace user_mgt.Data
             modelBuilder.Entity<Student>().HasData(new Student
             { 
                 UserId = Guid.NewGuid(),
-                FullName = "Nanayakkara omll",
-                Webmail = "nanayakkaraomll.21@uom.lk",
-                Password = "Lahiru#1",
+                FirstName = "Lahiru",
+                LastName = "Nanayakkara",
+                Webmail = "example.21@uom.lk",
+                Password = "+i7b14TZoXcFHDfIGw8b3g==;U5uWa6FpNeUamE6v5EVntc/nvlqGCDGe7tXLBlxz4t0=",
                 Role = "Student",
                 IsActive= true,
+                IsAdmin = true,
                 RegistrationDate = DateTime.Now,
                 LastLogin = DateTime.Now,
             });

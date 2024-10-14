@@ -40,13 +40,14 @@ namespace user_mgt.Services
             }
 
             // Hash the password
-            var passwordHash = _passwordHasher.HashPassword(null, student.PasswordHash);
+            var passwordHash = _passwordHasher.HashPassword(null, student.Password);
 
             // Create a new student object
             var newStudent = new Student
             {
                 UserId = Guid.NewGuid(),
-                FullName = student.FullName,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
                 Webmail = student.Webmail,
                 Role = student.Role,
                 Password = passwordHash,
@@ -68,7 +69,7 @@ namespace user_mgt.Services
             return new RegistrationResponse
             {
                 Success = true,
-                User = newStudent,  // Return the DTO instead of the entity
+                User = userDto,  // Return the DTO instead of the entity
                 Token = token,   // Return the generated JWT token
                 Error = null
             };
@@ -97,6 +98,52 @@ namespace user_mgt.Services
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+
+        public async Task<LoginResponseDto> LoginStudentAsync(LoginRequestDto loginRequestDto)
+        {
+
+            var student = await _appDbContext.Students.FirstOrDefaultAsync(u => u.Webmail == loginRequestDto.Email);
+
+            LoginResponseDto res = new();
+
+            // Check if student already exists
+            if (student == null)
+            {
+                res.Success = false;
+                res.User = null;
+                res.Error = "User doesn't exist!";
+                res.Token = null;
+                return res;
+            }
+
+            // Hash the password
+            var checkPassword = _passwordHasher.VerifyHashedPassword(null, student.Password, loginRequestDto.Password);
+
+            if (checkPassword == PasswordVerificationResult.Failed)
+            {
+                res.Success = false;
+                res.User = null;
+                res.Error = "Invalid Password!";
+                res.Token = null;
+                return res;
+            }
+
+            // Generate JWT token for the newly registered user
+            var token = GenerateJwtToken(student);
+
+            // Map the new student to a DTO
+            var userDto = _mapper.Map<UserDto>(student);
+
+            res.Success = true;
+            res.User = userDto;
+            res.Error = null;
+            res.Token = token;
+
+            student.LastLogin = DateTime.Now;
+            await _appDbContext.SaveChangesAsync();
+            return res;
         }
     }
 }
