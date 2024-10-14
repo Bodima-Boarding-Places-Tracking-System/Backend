@@ -4,6 +4,16 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCorsPolicy", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173") // Specify allowed origins
+               .AllowAnyHeader()                  // Allow any header
+               .AllowAnyMethod()                  // Allow any HTTP method (GET, POST, etc.)
+               .AllowCredentials();               // If you need credentials (like cookies)
+    });
+});
 
 builder.Services.AddDbContext<AppDbContext>(option =>
 {
@@ -23,6 +33,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//call the function ccourse policy
+app.UseCors("MyCorsPolicy");
 
 app.UseHttpsRedirection();
 
