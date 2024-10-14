@@ -285,3 +285,9 @@ D:\Projects\Bodima\BackEnd\user_mgt\bin\Debug\net8.0\Microsoft.AspNetCore.Identi
 D:\Projects\Bodima\BackEnd\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\Bodima\BackEnd\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\Bodima\BackEnd\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\PC\Desktop\Bodima\Backend\Services\Services\user_mgt\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
