@@ -15,6 +15,17 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCorsPolicy", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173") // Specify allowed origins
+               .AllowAnyHeader()                  // Allow any header
+               .AllowAnyMethod()                  // Allow any HTTP method (GET, POST, etc.)
+               .AllowCredentials();               // If you need credentials (like cookies)
+    });
+});
+
 builder.Services.AddDbContext<AppDbContext>(option =>
 {
     _ = option.UseSqlServer(builder.Configuration.GetConnectionString("DefualtConnection"));
@@ -34,7 +45,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//call the function ccourse policy
 app.UseCors("MyCorsPolicy");
 
 app.UseHttpsRedirection();

@@ -2,5 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Services/FileContentIndex/ed3d4915-da42-43bf-af86-f72ce35c8bdd.vsidx
-/.vs/Services/FileContentIndex/82a04af2-8cb6-4a31-8a70-6a2badbdd9ea.vsidx
+/.vs
