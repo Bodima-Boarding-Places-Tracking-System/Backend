@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("user_mgt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac08433cdc7e1504cb1d1d9fbe6b9b516ff7baad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f56f493afe0569565644b45dc66e3002e7ea180b")]
 [assembly: System.Reflection.AssemblyProductAttribute("user_mgt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("user_mgt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

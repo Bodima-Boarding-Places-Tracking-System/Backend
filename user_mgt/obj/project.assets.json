@@ -5282,19 +5282,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\Jithmi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj",
+      "projectUniqueName": "D:\\Bodima\\Backend\\user_mgt\\user_mgt.csproj",
       "projectName": "user_mgt",
-      "projectPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\user_mgt.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\user_mgt\\obj\\",
+      "projectPath": "D:\\Bodima\\Backend\\user_mgt\\user_mgt.csproj",
+      "packagesPath": "C:\\Users\\Jithmi\\.nuget\\packages\\",
+      "outputPath": "D:\\Bodima\\Backend\\user_mgt\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jithmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5394,7 +5399,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
