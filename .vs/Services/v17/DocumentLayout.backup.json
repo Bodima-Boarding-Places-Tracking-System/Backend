@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Bodima\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|d:\\bodima\\backend\\boarding_mgt\\controllers\\boardingapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|solutionrelative:boarding_mgt\\controllers\\boardingapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EFDC0FC-3366-402E-9478-59C52DE2FA41}|user_mgt\\user_mgt.csproj|d:\\bodima\\backend\\user_mgt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EFDC0FC-3366-402E-9478-59C52DE2FA41}|user_mgt\\user_mgt.csproj|solutionrelative:user_mgt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|d:\\bodima\\backend\\boarding_mgt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|solutionrelative:boarding_mgt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|d:\\bodima\\backend\\boarding_mgt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|solutionrelative:boarding_mgt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EFDC0FC-3366-402E-9478-59C52DE2FA41}|user_mgt\\user_mgt.csproj|d:\\bodima\\backend\\user_mgt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7EFDC0FC-3366-402E-9478-59C52DE2FA41}|user_mgt\\user_mgt.csproj|solutionrelative:user_mgt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|d:\\bodima\\backend\\boarding_mgt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E195B2D-3C8D-48C1-B009-E0D81CDBD81D}|boarding_mgt\\boarding_mgt.csproj|solutionrelative:boarding_mgt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BoardingApiController.cs",
+              "DocumentMoniker": "D:\\Bodima\\Backend\\boarding_mgt\\Controllers\\BoardingApiController.cs",
+              "RelativeDocumentMoniker": "boarding_mgt\\Controllers\\BoardingApiController.cs",
+              "ToolTip": "D:\\Bodima\\Backend\\boarding_mgt\\Controllers\\BoardingApiController.cs*",
+              "RelativeToolTip": "boarding_mgt\\Controllers\\BoardingApiController.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T16:04:59.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Bodima\\Backend\\user_mgt\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "user_mgt\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Bodima\\Backend\\user_mgt\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "user_mgt\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:31:31.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Bodima\\Backend\\boarding_mgt\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "boarding_mgt\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Bodima\\Backend\\boarding_mgt\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "boarding_mgt\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:31:29.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Bodima\\Backend\\user_mgt\\appsettings.json",
+              "RelativeDocumentMoniker": "user_mgt\\appsettings.json",
+              "ToolTip": "D:\\Bodima\\Backend\\user_mgt\\appsettings.json",
+              "RelativeToolTip": "user_mgt\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-14T15:19:07.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Bodima\\Backend\\boarding_mgt\\appsettings.json",
+              "RelativeDocumentMoniker": "boarding_mgt\\appsettings.json",
+              "ToolTip": "D:\\Bodima\\Backend\\boarding_mgt\\appsettings.json",
+              "RelativeToolTip": "boarding_mgt\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-14T15:19:01.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Bodima\\Backend\\boarding_mgt\\Program.cs",
               "RelativeDocumentMoniker": "boarding_mgt\\Program.cs",
               "ToolTip": "D:\\Bodima\\Backend\\boarding_mgt\\Program.cs",
               "RelativeToolTip": "boarding_mgt\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T14:39:02.197Z",
               "EditorCaption": ""

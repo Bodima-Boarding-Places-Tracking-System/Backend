@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace user_mgt.Migrations
 {
     /// <inheritdoc />
-    public partial class @new : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -55,12 +55,12 @@ namespace user_mgt.Migrations
             migrationBuilder.InsertData(
                 table: "BoardingOwners",
                 columns: new[] { "UserId", "Email", "FirstName", "IsActive", "IsAdmin", "LastLogin", "LastName", "Password", "Phone", "RegistrationDate", "Role" },
-                values: new object[] { new Guid("72ed95d3-9e40-4d4f-aea1-c36a6da187d6"), "lahirunanayakkara@gmail.com", "Lahiru", true, true, new DateTime(2024, 10, 5, 21, 30, 31, 714, DateTimeKind.Local).AddTicks(3886), "Nanayakkara", "12345678", "0760944045", new DateTime(2024, 10, 5, 21, 30, 31, 714, DateTimeKind.Local).AddTicks(3870), "BoardingOwner" });
+                values: new object[] { new Guid("1d496ba5-5a36-4ff7-bded-2342bb3b6baf"), "lahirunanayakkara@gmail.com", "Lahiru", true, true, new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1784), "Nanayakkara", "12345678", "0760944045", new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1765), "BoardingOwner" });
 
             migrationBuilder.InsertData(
                 table: "Students",
                 columns: new[] { "UserId", "FirstName", "IsActive", "IsAdmin", "LastLogin", "LastName", "Password", "RegistrationDate", "Role", "Webmail" },
-                values: new object[] { new Guid("14dcd0cb-15f4-4a17-837a-ae01a809fcf4"), "Lahiru", true, true, new DateTime(2024, 10, 5, 21, 30, 31, 714, DateTimeKind.Local).AddTicks(4075), "Nanayakkara", "Lahiru#1", new DateTime(2024, 10, 5, 21, 30, 31, 714, DateTimeKind.Local).AddTicks(4074), "Student", "example.21@uom.lk" });
+                values: new object[] { new Guid("cecb3eb7-5dc7-44d4-b440-99f059c60c07"), "Lahiru", true, true, new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2059), "Nanayakkara", "+i7b14TZoXcFHDfIGw8b3g==;U5uWa6FpNeUamE6v5EVntc/nvlqGCDGe7tXLBlxz4t0=", new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2057), "Student", "example.21@uom.lk" });
         }
 
         /// <inheritdoc />

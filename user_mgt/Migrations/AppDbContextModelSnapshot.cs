@@ -71,16 +71,16 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("193549ff-d60c-4902-ae35-901b1abb6d79"),
+                            UserId = new Guid("1d496ba5-5a36-4ff7-bded-2342bb3b6baf"),
                             Email = "lahirunanayakkara@gmail.com",
                             FirstName = "Lahiru",
                             IsActive = true,
                             IsAdmin = true,
-                            LastLogin = new DateTime(2024, 10, 7, 2, 43, 55, 919, DateTimeKind.Local).AddTicks(4494),
+                            LastLogin = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1784),
                             LastName = "Nanayakkara",
                             Password = "12345678",
                             Phone = "0760944045",
-                            RegistrationDate = new DateTime(2024, 10, 7, 2, 43, 55, 919, DateTimeKind.Local).AddTicks(4482),
+                            RegistrationDate = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1765),
                             Role = "BoardingOwner"
                         });
                 });
@@ -130,14 +130,14 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("bfee54bc-4fb0-4997-97a9-878d777be2cc"),
+                            UserId = new Guid("cecb3eb7-5dc7-44d4-b440-99f059c60c07"),
                             FirstName = "Lahiru",
                             IsActive = true,
                             IsAdmin = true,
-                            LastLogin = new DateTime(2024, 10, 7, 2, 43, 55, 919, DateTimeKind.Local).AddTicks(4698),
+                            LastLogin = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2059),
                             LastName = "Nanayakkara",
                             Password = "+i7b14TZoXcFHDfIGw8b3g==;U5uWa6FpNeUamE6v5EVntc/nvlqGCDGe7tXLBlxz4t0=",
-                            RegistrationDate = new DateTime(2024, 10, 7, 2, 43, 55, 919, DateTimeKind.Local).AddTicks(4697),
+                            RegistrationDate = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2057),
                             Role = "Student",
                             Webmail = "example.21@uom.lk"
                         });
