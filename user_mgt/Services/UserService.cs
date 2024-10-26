@@ -49,7 +49,7 @@ namespace user_mgt.Services
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Webmail = student.Webmail,
-                Role = student.Role,
+                Roles = student.Roles,
                 Password = passwordHash,
                 IsActive = true,
                 RegistrationDate = DateTime.UtcNow,
@@ -81,15 +81,22 @@ namespace user_mgt.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]);
 
+            var claims = new List<Claim>
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, student.UserId.ToString()),
+                    new Claim(JwtRegisteredClaimNames.Email, student.Webmail),
+                    new Claim("isAdmin", student.IsAdmin.ToString()),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            foreach (var role in student.Roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            }
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[]
-                {
-                    new Claim(JwtRegisteredClaimNames.Sub, student.UserId.ToString()),
-                    new Claim(JwtRegisteredClaimNames.Email, student.Webmail),
-                    new Claim(ClaimTypes.Role, student.Role),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-                }),
+                Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.UtcNow.AddMinutes(int.Parse(_configuration["JwtSettings:ExpiresInMinutes"])),
                 Issuer = _configuration["JwtSettings:Issuer"],
                 Audience = _configuration["JwtSettings:Audience"],
