@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using user_mgt.Data;
 
@@ -11,9 +12,11 @@ using user_mgt.Data;
 namespace user_mgt.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241022060409_updated")]
+    partial class updated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,17 +74,17 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("c9bb1d02-c56e-44a8-98e8-2c706d098ee8"),
+                            UserId = new Guid("84d6053f-0dd3-43ea-8335-968e50b8419e"),
                             Email = "lahirunanayakkara@gmail.com",
                             FirstName = "Lahiru",
                             IsActive = true,
                             IsAdmin = true,
-                            LastLogin = new DateTime(2024, 10, 26, 18, 6, 42, 824, DateTimeKind.Local).AddTicks(3204),
+                            LastLogin = new DateTime(2024, 10, 22, 11, 34, 8, 802, DateTimeKind.Local).AddTicks(3382),
                             LastName = "Nanayakkara",
                             Password = "12345678",
                             Phone = "0760944045",
-                            RegistrationDate = new DateTime(2024, 10, 26, 18, 6, 42, 824, DateTimeKind.Local).AddTicks(3194),
-                            Roles = "[\"boarding-owner\",\"admin\"]"
+                            RegistrationDate = new DateTime(2024, 10, 22, 11, 34, 8, 802, DateTimeKind.Local).AddTicks(3367),
+                            Roles = "[\"BoardingOwner\",\"Admin\"]"
                         });
                 });
 
@@ -130,15 +133,15 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("9740b23b-8d88-4454-9988-8eb90dcd35c0"),
+                            UserId = new Guid("0307287d-46e1-418a-a8ac-4ed18a4aed25"),
                             FirstName = "Lahiru",
                             IsActive = true,
                             IsAdmin = true,
-                            LastLogin = new DateTime(2024, 10, 26, 18, 6, 42, 824, DateTimeKind.Local).AddTicks(3315),
+                            LastLogin = new DateTime(2024, 10, 22, 11, 34, 8, 802, DateTimeKind.Local).AddTicks(3530),
                             LastName = "Nanayakkara",
                             Password = "+i7b14TZoXcFHDfIGw8b3g==;U5uWa6FpNeUamE6v5EVntc/nvlqGCDGe7tXLBlxz4t0=",
-                            RegistrationDate = new DateTime(2024, 10, 26, 18, 6, 42, 824, DateTimeKind.Local).AddTicks(3314),
-                            Roles = "[\"student\",\"admin\"]",
+                            RegistrationDate = new DateTime(2024, 10, 22, 11, 34, 8, 802, DateTimeKind.Local).AddTicks(3529),
+                            Roles = "[\"Student\",\"Admin\"]",
                             Webmail = "example.21@uom.lk"
                         });
                 });

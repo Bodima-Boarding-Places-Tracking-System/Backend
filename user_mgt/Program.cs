@@ -53,6 +53,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("AdminOnly", policy =>
+        policy.RequireClaim("isAdmin", "True"));
+
+
 // Register application services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddControllers();
