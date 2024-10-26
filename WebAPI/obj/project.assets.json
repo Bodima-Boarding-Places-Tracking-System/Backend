@@ -428,24 +428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jithmi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bodima\\Backend\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "D:\\Bodima\\Backend\\WebAPI\\WebAPI.csproj",
-      "packagesPath": "C:\\Users\\Jithmi\\.nuget\\packages\\",
-      "outputPath": "D:\\Bodima\\Backend\\WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Bodima\\Backend\\Services\\Services\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jithmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -501,7 +496,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
