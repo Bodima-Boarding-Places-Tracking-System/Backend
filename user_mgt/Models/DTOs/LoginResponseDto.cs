@@ -1,8 +1,6 @@
-﻿using user_mgt.Models.Domains;
-
-namespace user_mgt.Models.DTOs
+﻿namespace user_mgt.Models.DTOs
 {
-    public class RegistrationResponse
+    public class LoginResponseDto
     {
         public bool Success { get; set; }
         public UserDto? User { get; set; }

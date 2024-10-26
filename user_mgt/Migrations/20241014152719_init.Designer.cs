@@ -12,8 +12,8 @@ using user_mgt.Data;
 namespace user_mgt.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240920092910_initial")]
-    partial class initial
+    [Migration("20241014152719_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,15 +35,22 @@ namespace user_mgt.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FullName")
+                    b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("LastLogin")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -67,14 +74,16 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("88aebc5b-1cf1-4323-bc47-148c83fc4766"),
+                            UserId = new Guid("1d496ba5-5a36-4ff7-bded-2342bb3b6baf"),
                             Email = "lahirunanayakkara@gmail.com",
-                            FullName = "Lahiru Nanayakkara",
+                            FirstName = "Lahiru",
                             IsActive = true,
-                            LastLogin = new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8815),
+                            IsAdmin = true,
+                            LastLogin = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1784),
+                            LastName = "Nanayakkara",
                             Password = "12345678",
                             Phone = "0760944045",
-                            RegistrationDate = new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8804),
+                            RegistrationDate = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(1765),
                             Role = "BoardingOwner"
                         });
                 });
@@ -85,15 +94,22 @@ namespace user_mgt.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("FullName")
+                    b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("LastLogin")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -117,14 +133,16 @@ namespace user_mgt.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("c8a6e6ef-3fdd-4d7b-a150-916d33f48113"),
-                            FullName = "Nanayakkara omll",
+                            UserId = new Guid("cecb3eb7-5dc7-44d4-b440-99f059c60c07"),
+                            FirstName = "Lahiru",
                             IsActive = true,
-                            LastLogin = new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8994),
-                            Password = "Lahiru#1",
-                            RegistrationDate = new DateTime(2024, 9, 20, 14, 59, 9, 548, DateTimeKind.Local).AddTicks(8993),
+                            IsAdmin = true,
+                            LastLogin = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2059),
+                            LastName = "Nanayakkara",
+                            Password = "+i7b14TZoXcFHDfIGw8b3g==;U5uWa6FpNeUamE6v5EVntc/nvlqGCDGe7tXLBlxz4t0=",
+                            RegistrationDate = new DateTime(2024, 10, 14, 20, 57, 16, 181, DateTimeKind.Local).AddTicks(2057),
                             Role = "Student",
-                            Webmail = "nanayakkaraomll.21@uom.lk"
+                            Webmail = "example.21@uom.lk"
                         });
                 });
 #pragma warning restore 612, 618

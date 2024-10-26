@@ -4,6 +4,16 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCorsPolicy", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173") // Specify allowed origins
+               .AllowAnyHeader()                  // Allow any header
+               .AllowAnyMethod()                  // Allow any HTTP method (GET, POST, etc.)
+               .AllowCredentials();               // If you need credentials (like cookies)
+    });
+});
 
 builder.Services.AddCors(options =>
 {
