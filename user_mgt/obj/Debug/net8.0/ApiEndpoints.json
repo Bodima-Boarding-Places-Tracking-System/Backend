@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "user_mgt.Controllers.UserController",
+    "Method": "GetAdminData",
+    "RelativePath": "api/User/admin-only",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "user_mgt.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",
     "HttpMethod": "POST",

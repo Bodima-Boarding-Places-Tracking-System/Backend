@@ -13,7 +13,7 @@ namespace user_mgt.Models.Domains
         [Required]
         public string LastName { get; set; }
         [Required]
-        public string Role { get; set; }
+        public List<string> Roles { get; set; }
         [Required]
         public string Password { get; set; }
         public DateTime RegistrationDate { get; set; }

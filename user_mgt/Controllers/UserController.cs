@@ -28,7 +28,7 @@ namespace user_mgt.Controllers
                 return BadRequest();
             }
 
-            if (userRegistrationDto.Role == "student")
+            if (userRegistrationDto.Roles.Contains("student"))
             {
                 var studentRegistrationDto = new StudentRegistrationDto
                 {
@@ -36,7 +36,7 @@ namespace user_mgt.Controllers
                     LastName = userRegistrationDto.LastName,
                     Webmail = userRegistrationDto.Webmail!,
                     Password = userRegistrationDto.Password,
-                    Role = userRegistrationDto.Role
+                    Roles = userRegistrationDto.Roles
                 };
 
                 var result = await _userService.RegisterStudentAsync(studentRegistrationDto);
@@ -47,7 +47,7 @@ namespace user_mgt.Controllers
                     return Ok(result);
                 } else
                 {
-                    return BadRequest(new {result.Error});
+                    return BadRequest(new { result.Error });
                 }
             }
 
@@ -58,7 +58,7 @@ namespace user_mgt.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
         {
-            if(loginRequestDto == null)
+            if (loginRequestDto == null)
             {
                 return BadRequest();
             }
@@ -67,7 +67,7 @@ namespace user_mgt.Controllers
             {
                 var result = await _userService.LoginStudentAsync(loginRequestDto);
 
-                if (result.Success) 
+                if (result.Success)
                 {
                     return Ok(result);
                 }
@@ -79,7 +79,15 @@ namespace user_mgt.Controllers
                 }
             }
 
-            return BadRequest(new { error="Invalid role specified!" });
+            return BadRequest(new { error = "Invalid role specified!" });
         }
+
+        [Authorize(Roles ="student, admin")]
+        [HttpGet("admin-only")]
+        public IActionResult GetAdminData()
+        {
+            return Ok("This is protected student/admin data.");
+        }
+
     }
 }
